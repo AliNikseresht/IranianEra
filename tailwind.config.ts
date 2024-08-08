@@ -6,8 +6,14 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  plugins: [
+    require("flowbite/plugin")
+  ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Vazir', 'Poppins', 'sans-serif'],
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -23,6 +29,5 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
 };
 export default config;
