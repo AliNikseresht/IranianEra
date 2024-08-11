@@ -4,14 +4,7 @@ import Link from 'next/link'
 import React, { useState } from 'react'
 import Logo from '../../public/iran-logo.png'
 
-type Language = 'en' | 'fa';
-
 const Navbar: React.FC = () => {
-    const [language, setLanguage] = useState<Language>('en');
-
-    const handleLanguageChange = (lang: Language) => {
-        setLanguage(lang);
-    };
 
     const navItems = [
         { href: '/', label: 'Home', current: true },
@@ -24,7 +17,7 @@ const Navbar: React.FC = () => {
     ];
 
     return (
-        <nav className="bg-white/60 backdrop-blur border-gray-200 dark:bg-gray-900/60 sticky top-0">
+        <nav className="bg-[#fbf5eb] backdrop-blur border-gray-200 dark:bg-gray-900/60 sticky top-0 z-10">
             <div className="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
                     <Image
