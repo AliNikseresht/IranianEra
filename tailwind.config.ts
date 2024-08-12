@@ -7,7 +7,7 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   plugins: [
-    require("flowbite/plugin")
+    require("flowbite/plugin"),
   ],
   theme: {
     extend: {
@@ -18,14 +18,25 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-        "main-image": "url('/Images/bg-1.jpg')",
-        // "contact-us-image": "url('/images/contact-us.webp')",
-        // "about-us-image": "url('/images/about-us.webp')",
-        // "job-image": "url('/images/job.webp')",
-        // "honors-image": "url('/images/honors.webp')",
-        // "statistics-image": "url('/images/statistics.webp')",
-        // "work-plans-image": "url('/images/work-plans.webp')",
-        // "footer-image": "url('/images/footer-bg.svg')",
+      },
+      colors: {
+        primary: {
+          light: '#6b7280',
+          DEFAULT: '#4a97aa',
+          dark: '#111827',
+        },
+        secondary: {
+          light: '#f1f1f1',
+          DEFAULT: '#fbf5eb',
+          dark: '#818181',
+        },
+        accent: {
+          light: '#d2b692',
+          DEFAULT: '#ab9273',
+          dark: '#806b51',
+        },
+        customGray: '#b0bec5',
+        customRed: '#ff6347',
       },
     },
   },

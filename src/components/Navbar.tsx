@@ -17,7 +17,7 @@ const Navbar: React.FC = () => {
     ];
 
     return (
-        <nav className="bg-[#fbf5eb] backdrop-blur border-gray-200 dark:bg-gray-900/60 sticky top-0 z-10">
+        <nav className="bg-secondary backdrop-blur border-gray-200 sticky top-0 z-10">
             <div className="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
                     <Image
@@ -32,7 +32,7 @@ const Navbar: React.FC = () => {
                     <button
                         type="button"
                         data-dropdown-toggle="language-dropdown-menu"
-                        className="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-gray-900 dark:text-white rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white"
+                        className="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-gray-900 rounded-lg cursor-pointer hover:bg-gray-100 "
                     >
                         English (US)
                     </button>
@@ -41,14 +41,14 @@ const Navbar: React.FC = () => {
                     className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
                     id="navbar-language"
                 >
-                    <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
                         {navItems.map(({ href, label, current }) => (
                             <li key={href}>
                                 <Link
                                     href={href}
                                     className={`block py-2 px-3 md:p-0 rounded ${current
-                                        ? 'text-white bg-[#ab9273] md:bg-transparent md:text-[#ab9273]'
-                                        : 'text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#ab9273] dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700'
+                                        ? 'text-white bg-accent md:bg-transparent md:text-accent'
+                                        : 'text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-accent'
                                         }`}
                                     aria-current={current ? 'page' : undefined}
                                 >

@@ -30,7 +30,7 @@ const Header = () => {
     };
 
     return (
-        <header className="w-full h-screen flex justify-between flex-wrap lg:flex-nowrap">
+        <header className="w-full h-screen flex justify-between flex-wrap lg:flex-nowrap overflow-hidden">
             <div
                 className="w-full lg:w-[50rem] flex flex-col items-center justify-center text-center text-[#000] h-full"
                 data-aos="fade-right"
@@ -66,6 +66,7 @@ const Header = () => {
                     </Swiper>
                 </div>
                 <button
+                    data-aos="fade-left"
                     type="button"
                     onClick={handleNextSlide}
                     className="text-[#ab9273] absolute hover:scale-125 duration-500 top-[39%] right-[6%] font-medium rounded-lg text-sm px-2 py-1.5 text-center inline-flex items-center"
