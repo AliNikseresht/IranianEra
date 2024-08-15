@@ -1,14 +1,23 @@
 'use client';
 import Image from 'next/image';
-import Link from 'next/link'
-import React, { useState } from 'react'
-import Logo from '../../public/iran-logo.png'
+import Link from 'next/link';
+import React, { useEffect, useState } from 'react';
+import Logo from '../../public/iran-logo.png';
 import LanguageSelect from './CustomSelect';
 
 const Navbar: React.FC = () => {
+    const [currentPath, setCurrentPath] = useState<string>('/');
+
+    useEffect(() => {
+        setCurrentPath(window.location.pathname);
+        const handlePopState = () => setCurrentPath(window.location.pathname);
+        window.addEventListener('popstate', handlePopState);
+
+        return () => window.removeEventListener('popstate', handlePopState);
+    }, []);
 
     const navItems = [
-        { href: '/', label: 'Home', current: true },
+        { href: '/', label: 'Home' },
         { href: '/historical-periods', label: 'Historical Periods' },
         { href: '/important-figures', label: 'Important Figures' },
         { href: '/historical-sites', label: 'Historical Sites' },
@@ -35,15 +44,15 @@ const Navbar: React.FC = () => {
                     id="navbar-language"
                 >
                     <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
-                        {navItems.map(({ href, label, current }) => (
+                        {navItems.map(({ href, label }) => (
                             <li key={href}>
                                 <Link
                                     href={href}
-                                    className={`block py-2 px-3 md:p-0 rounded ${current
+                                    className={`block py-2 px-3 md:p-0 rounded ${currentPath === href
                                         ? 'text-white bg-accent md:bg-transparent md:text-accent'
                                         : 'text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-accent'
                                         }`}
-                                    aria-current={current ? 'page' : undefined}
+                                    aria-current={currentPath === href ? 'page' : undefined}
                                 >
                                     {label}
                                 </Link>
@@ -53,7 +62,7 @@ const Navbar: React.FC = () => {
                 </div>
             </div>
         </nav>
-    )
-}
+    );
+};
 
-export default Navbar
+export default Navbar;

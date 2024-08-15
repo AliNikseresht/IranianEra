@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
-
-const inter = Inter({ subsets: ["latin"] });
+import ClientProvider from "@/components/ClientProvider";
 
 export const metadata: Metadata = {
   title: "Iranian Era",
@@ -20,8 +18,10 @@ export default function RootLayout({
       <body className="flex flex-col">
         <div>
           <main>
-            <Navbar />
-            {children}
+            <ClientProvider>
+              <Navbar />
+              {children}
+            </ClientProvider>
           </main>
         </div>
       </body>
