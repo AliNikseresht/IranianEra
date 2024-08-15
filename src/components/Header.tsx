@@ -10,7 +10,7 @@ import 'swiper/css/navigation';
 import 'aos/dist/aos.css';
 import Image from 'next/image';
 
-const Header = () => {
+const Header: React.FC = () => {
     const [showCircle, setShowCircle] = useState(false);
     const swiperRef = useRef<SwiperCore | null>(null);
 
@@ -35,7 +35,7 @@ const Header = () => {
                 data-aos="fade-right"
             >
                 <h1 className="text-9xl font-bold text-[#ab9273]">Iranian Era</h1>
-                <h3 className="text-3xl my-3">A journey through Iran's ups and downs history</h3>
+                <h3 className="text-3xl my-3">A journey through Iran&apos;s ups and downs history</h3>
                 <p className="text-lg">From the distant past to the present day</p>
             </div>
             <div className="relative w-full lg:w-[45rem] h-full flex items-center justify-center">
@@ -51,13 +51,13 @@ const Header = () => {
                         effect="fade"
                         className="w-full h-full"
                     >
-                        {['bg-1', 'bg-2', 'bg-3', 'bg-4', 'bg-5', 'bg-6', 'Tomb-Cyrus', 'hafeziye',].map((bg, index) => (
+                        {['bg-1', 'bg-2', 'bg-3', 'bg-4', 'bg-5', 'bg-6', 'Tomb-Cyrus', 'hafeziye'].map((bg, index) => (
                             <SwiperSlide key={index}>
                                 <Image
                                     src={`/Images/${bg}.jpg`}
                                     alt={`Slide ${index + 1}`}
-                                    layout="fill"
-                                    objectFit="cover"
+                                    fill
+                                    style={{ objectFit: 'cover' }}
                                     priority={index === 0}
                                 />
                             </SwiperSlide>
