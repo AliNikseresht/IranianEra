@@ -52,7 +52,7 @@ const Header = () => {
                         effect="fade"
                         className="w-full h-full"
                     >
-                        {['bg-1', 'bg-2', 'bg-3', 'bg-4', 'bg-5', 'bg-6'].map((bg, index) => (
+                        {['bg-1', 'bg-2', 'bg-3', 'bg-4', 'bg-5', 'bg-6', 'Tomb-Cyrus', 'hafeziye',].map((bg, index) => (
                             <SwiperSlide key={index}>
                                 <Image
                                     src={`/Images/${bg}.jpg`}

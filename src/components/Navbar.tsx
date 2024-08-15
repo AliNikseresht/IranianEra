@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link'
 import React, { useState } from 'react'
 import Logo from '../../public/iran-logo.png'
+import LanguageSelect from './CustomSelect';
 
 const Navbar: React.FC = () => {
 
@@ -11,8 +12,6 @@ const Navbar: React.FC = () => {
         { href: '/historical-periods', label: 'Historical Periods' },
         { href: '/important-figures', label: 'Important Figures' },
         { href: '/historical-sites', label: 'Historical Sites' },
-        { href: '/image-gallery', label: 'Image Gallery' },
-        { href: '/culture-art', label: 'Culture and Art' },
         { href: '/contact', label: 'Contact' },
     ];
 
@@ -29,13 +28,7 @@ const Navbar: React.FC = () => {
                     />
                 </Link>
                 <div className="flex items-center md:order-2 space-x-1 md:space-x-0 rtl:space-x-reverse">
-                    <button
-                        type="button"
-                        data-dropdown-toggle="language-dropdown-menu"
-                        className="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-gray-900 rounded-lg cursor-pointer hover:bg-gray-100 "
-                    >
-                        English (US)
-                    </button>
+                    <LanguageSelect />
                 </div>
                 <div
                     className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"

@@ -10,8 +10,8 @@ interface CardProps {
 }
 
 const Card: React.FC<CardProps> = ({ name, title, img }) => (
-    <div className="w-[18rem] h-[30rem] max-w-sm flex flex-col justify-between items-center gap-0 p-[1em]">
-        <Image className="w-[70%] h-[70%] object-cover rounded-full shadow-lg" src={img} alt={`${name} image`} />
+    <div className="w-[16.5rem] h-[30rem] max-w-sm flex flex-col justify-between items-center gap-0 p-[1em] my-6 shadow-xl rounded-2xl">
+        <Image className="w-[90%] h-[70%] object-cover rounded-full hover:scale-105 cursor-pointer duration-300 shadow-lg" src={img} alt={`${name} image`} />
         <h5 className=" text-xl font-medium text-gray-900 ">{name}</h5>
         <span className="text-sm text-gray-500 ">{title}</span>
         <div className="flex justify-end w-full">
