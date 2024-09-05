@@ -16,7 +16,7 @@ const Card: React.FC<CardProps> = ({ name, title, img }) => (
         <span className="text-sm text-gray-500 ">{title}</span>
         <div className="flex justify-end w-full">
             <Link href="#"
-                className="inline-flex items-center px-[2em] py-2 text-sm font-medium text-center text-white bg-accent rounded-md hover:bg-accent-dark duration-200">More</Link>
+                className="inline-flex items-center px-[2.5em] py-2 text-sm font-medium text-center text-white bg-accent rounded-md hover:bg-accent-dark duration-200">More</Link>
         </div>
     </div>
 );

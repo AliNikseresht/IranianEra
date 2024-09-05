@@ -2,8 +2,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
-import Logo from '../../public/iran-logo.png';
-import LanguageSelect from './CustomSelect';
+import Logo from '../../../public/iran-logo.png';
+import LanguageSelect from '../ui/LanguageSelect';
 
 const Navbar: React.FC = () => {
     const [currentPath, setCurrentPath] = useState<string>('/');
@@ -26,7 +26,7 @@ const Navbar: React.FC = () => {
 
     return (
         <nav className="bg-secondary backdrop-blur border-gray-200 sticky top-0 z-10">
-            <div className="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <div className="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto">
                 <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
                     <Image
                         src={Logo}

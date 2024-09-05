@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
-import ClientProvider from "@/components/ClientProvider";
+import ClientProvider from "@/components/ui/ClientProvider";
+import ClientLayout from "../components/layout/ClientLayout";
 
 export const metadata: Metadata = {
   title: "Iranian Era",
@@ -16,14 +16,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="flex flex-col">
-        <div>
-          <main>
-            <ClientProvider>
-              <Navbar />
-              {children}
-            </ClientProvider>
-          </main>
-        </div>
+        <main>
+          <ClientProvider>
+            <ClientLayout>{children}</ClientLayout>
+          </ClientProvider>
+        </main>
       </body>
     </html>
   );

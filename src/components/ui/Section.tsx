@@ -1,17 +1,17 @@
 import React from 'react';
-import Card from './Card';
-import cyrusImage from '../../public/Images/cyrus.jpg';
-import khosrowImage from '../../public/Images/khosrow.jpg'
-import dariushImage from '../../public/Images/dariush.jpg'
-import bahramV from '../../public/Images/bahram-V.jpg'
-import shapourII from '../../public/Images/shapour-II.jpeg'
-import mehrdadI from '../../public/Images/mehrdad.jpg'
-import hormizdIV from '../../public/Images/hormizd-IV.jpg'
-import cyrusIII from '../../public/Images/koroush-kochak.jpg'
-import shapourI from '../../public/Images/shapur-I.jpg'
-import dariushIII from '../../public/Images/dariushIII.jpg'
+import cyrusImage from '../../../public/Images/cyrus.jpg';
+import khosrowImage from '../../../public/Images/khosrow.jpg'
+import dariushImage from '../../../public/Images/dariush.jpg'
+import bahramV from '../../../public/Images/bahram-V.jpg'
+import shapourII from '../../../public/Images/shapour-II.jpeg'
+import mehrdadI from '../../../public/Images/mehrdad.jpg'
+import hormizdIV from '../../../public/Images/hormizd-IV.jpg'
+import cyrusIII from '../../../public/Images/koroush-kochak.jpg'
+import shapourI from '../../../public/Images/shapur-I.jpg'
+import dariushIII from '../../../public/Images/dariushIII.jpg'
 
 import { StaticImageData } from 'next/image';
+import Card from './Card';
 
 // Define the type for card data
 interface CardData {

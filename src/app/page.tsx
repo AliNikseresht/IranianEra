@@ -1,5 +1,6 @@
-import Header from "@/components/Header";
-import Section from "@/components/Section";
+import Header from "@/components/layout/Header";
+import Section from "@/components/ui/Section";
+
 
 export default function Home() {
   return (
