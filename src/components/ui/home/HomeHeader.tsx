@@ -31,16 +31,16 @@ const Header: React.FC = () => {
   return (
     <header className="bg-secondary flex h-screen w-full flex-wrap justify-between overflow-hidden lg:flex-nowrap">
       <div
-        className="flex h-full w-full flex-col items-center justify-center text-center text-[#000] lg:w-[50rem]"
+        className="flex md:h-full w-full flex-col items-center justify-center text-center text-[#000] lg:w-[50rem]"
         data-aos="fade-right"
       >
-        <h1 className="text-9xl font-bold text-accent">Iranian Era</h1>
-        <h3 className="my-3 text-3xl">
+        <h1 className="text-5xl md:text-9xl font-bold text-accent">Iranian Era</h1>
+        <h3 className="my-3 text-xs md:text-3xl">
           A journey through Iran&apos;s ups and downs history
         </h3>
-        <p className="text-lg">From the distant past to the present day</p>
+        <p className="text-sm md:text-lg">From the distant past to the present day</p>
       </div>
-      <div className="relative flex h-full w-full items-center justify-center lg:w-[45rem]">
+      <div className="hidden md:flex relative h-full w-full items-center justify-center lg:w-[45rem]">
         <div className={`circle-3d absolute ${showCircle ? "show" : ""}`} />
         <div
           className="slider-clip relative h-full w-full"

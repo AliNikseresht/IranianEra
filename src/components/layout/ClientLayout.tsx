@@ -2,8 +2,8 @@
 
 import React from "react";
 import { usePathname } from "next/navigation";
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 export default function ClientLayout({
   children,
@@ -16,7 +16,7 @@ export default function ClientLayout({
     pathname.startsWith("/404") || pathname.startsWith("/not-found");
 
   return (
-    <div className="p-4">
+    <div className="p-3">
       {!is404Page && <Navbar />}
       {children}
       {!is404Page && <Footer />}

@@ -56,16 +56,8 @@ const HistoricalPeriods: React.FC = () => {
         {periods?.map((period) => (
           <div
             key={period.id}
-            className="overflow-hidden rounded-lg bg-[#fff] h-[25rem] shadow-md flex flex-col justify-between"
+            className="flex h-[13rem] flex-col justify-between overflow-hidden rounded-lg bg-[#fff] shadow-md"
           >
-            <Image
-              style={{ width: "100%", height: "auto" }}
-              width={250}
-              height={150}
-              objectFit="cover"
-              src={period.imageUrl}
-              alt={period.title}
-            />
             <div className="p-4">
               <h2 className="mb-2 text-3xl font-semibold">{period.title}</h2>
               <p className="mb-4 text-gray-700">{period.description}</p>

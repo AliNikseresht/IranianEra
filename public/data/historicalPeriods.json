@@ -3,7 +3,6 @@
         "id": 1,
         "title": "Ancient Persia",
         "description": "The era of ancient Persia, including the Achaemenid Empire, which is considered one of the greatest empires of antiquity.",
-        "imageUrl": "/History-image/Ancient-Persia.jpg",
         "articles": [
             {
                 "title": "Cyrus the Great",
@@ -19,7 +18,6 @@
         "id": 2,
         "title": "Medieval Persia",
         "description": "The era of medieval Persia, including the Seljuks and Mongols, and their impact on Persian culture and society.",
-        "imageUrl": "/images/medieval-persia.jpg",
         "articles": [
             {
                 "title": "Seljuk Empire",
@@ -35,7 +33,6 @@
         "id": 3,
         "title": "Pre-Islamic Period",
         "description": "The period before the advent of Islam, featuring various empires and cultures such as the Achaemenids, Parthians, and Sassanids.",
-        "imageUrl": "/images/pre-islamic.jpg",
         "articles": [
             {
                 "title": "Achaemenid Empire",
@@ -55,7 +52,6 @@
         "id": 4,
         "title": "Islamic Period",
         "description": "The period following the advent of Islam, marked by the rise of various Islamic empires and dynasties.",
-        "imageUrl": "/images/islamic.jpg",
         "articles": [
             {
                 "title": "Umayyad Caliphate",
@@ -79,7 +75,6 @@
         "id": 5,
         "title": "Taherian Dynasty",
         "description": "A period of Iranian history under the Taherian dynasty (820–873 AD). Founded by Tahir ibn Husayn, a significant regional power.",
-        "imageUrl": "/images/taherian.jpg",
         "articles": [
             {
                 "title": "Tahir ibn Husayn",
@@ -91,7 +86,6 @@
         "id": 6,
         "title": "Saffarid Dynasty",
         "description": "The Saffarid dynasty (875–900 AD) founded by Ya'qub al-Saffar, notable for its military expansion and administrative reforms.",
-        "imageUrl": "/images/saffarid.jpg",
         "articles": [
             {
                 "title": "Ya'qub al-Saffar",
@@ -103,7 +97,6 @@
         "id": 7,
         "title": "Samanid Dynasty",
         "description": "The Samanid dynasty (875–999 AD) founded by Ismail Samani and Nasr I, notable for its cultural and scientific achievements.",
-        "imageUrl": "/images/samanid.jpg",
         "articles": [
             {
                 "title": "Ismail Samani",
@@ -119,7 +112,6 @@
         "id": 8,
         "title": "Ziyarid Dynasty",
         "description": "The Ziyarid dynasty (928–1070 AD) founded by Mardavij ibn Ziyar, known for its cultural and architectural contributions.",
-        "imageUrl": "/images/ziyarid.jpg",
         "articles": [
             {
                 "title": "Mardavij ibn Ziyar",
@@ -131,7 +123,6 @@
         "id": 9,
         "title": "Buyid Dynasty",
         "description": "The Buyid dynasty (932–1049 AD) founded by Ali ibn Buyeh, known for its significant political and cultural influence.",
-        "imageUrl": "/images/buyid.jpg",
         "articles": [
             {
                 "title": "Ali ibn Buyeh",
@@ -143,7 +134,6 @@
         "id": 10,
         "title": "Ghaznavid Dynasty",
         "description": "The Ghaznavid dynasty (998–1160 AD) founded by Mahmud of Ghazni, notable for its military conquests and cultural patronage.",
-        "imageUrl": "/images/ghaznavid.jpg",
         "articles": [
             {
                 "title": "Mahmud of Ghazni",
@@ -155,7 +145,6 @@
         "id": 11,
         "title": "Seljuk Dynasty",
         "description": "The Seljuk dynasty (1038–1194 AD) founded by Tughril Beg, significant for its military expansion and role in Islamic history.",
-        "imageUrl": "/images/seljuk.jpg",
         "articles": [
             {
                 "title": "Tughril Beg",
@@ -171,7 +160,6 @@
         "id": 12,
         "title": "Khwarezmian Dynasty",
         "description": "The Khwarezmian dynasty (1078–1220 AD) founded by Anushtegin Gharchai, known for its conflicts with the Mongols and cultural achievements.",
-        "imageUrl": "/images/khwarezmian.jpg",
         "articles": [
             {
                 "title": "Anushtegin Gharchai",
@@ -183,7 +171,6 @@
         "id": 13,
         "title": "Ilkhanate Dynasty",
         "description": "The Ilkhanate dynasty (1256–1336 AD) founded by Hulagu Khan, part of the Mongol Empire, known for its role in Iranian history.",
-        "imageUrl": "/images/ilkhanate.jpg",
         "articles": [
             {
                 "title": "Hulagu Khan",
@@ -195,7 +182,6 @@
         "id": 14,
         "title": "Timurid Dynasty",
         "description": "The Timurid dynasty (1370–1498 AD) founded by Timur, known for its significant contributions to art and architecture.",
-        "imageUrl": "/images/timurid.jpg",
         "articles": [
             {
                 "title": "Timur",
@@ -207,7 +193,6 @@
         "id": 15,
         "title": "Safavid Dynasty",
         "description": "The Safavid dynasty (1501–1723 AD) founded by Ismail I, known for its establishment of Shia Islam as the state religion of Iran.",
-        "imageUrl": "/images/safavid.jpg",
         "articles": [
             {
                 "title": "Ismail I",
@@ -223,7 +208,6 @@
         "id": 16,
         "title": "Afsharid Dynasty",
         "description": "The Afsharid dynasty (1735–1748 AD) founded by Nader Shah, known for its military campaigns and attempts to restore Iranian sovereignty.",
-        "imageUrl": "/images/afsharid.jpg",
         "articles": [
             {
                 "title": "Nader Shah",
@@ -235,7 +219,6 @@
         "id": 17,
         "title": "Zand Dynasty",
         "description": "The Zand dynasty (1750–1795 AD) founded by Karim Khan Zand, known for its efforts to stabilize and unify Iran after a period of turmoil.",
-        "imageUrl": "/images/zand.jpg",
         "articles": [
             {
                 "title": "Karim Khan Zand",
@@ -247,7 +230,6 @@
         "id": 18,
         "title": "Qajar Dynasty",
         "description": "The Qajar dynasty (1795–1927 AD) founded by Agha Mohammad Khan, significant for its modernization efforts and interactions with Western powers.",
-        "imageUrl": "/images/qajar.jpg",
         "articles": [
             {
                 "title": "Agha Mohammad Khan",
@@ -263,7 +245,6 @@
         "id": 19,
         "title": "Pahlavi Dynasty",
         "description": "The Pahlavi dynasty (1926–1979 AD) founded by Reza Shah Pahlavi, known for its modernization efforts and significant political changes.",
-        "imageUrl": "/images/pahlavi.jpg",
         "articles": [
             {
                 "title": "Reza Shah Pahlavi",
@@ -275,7 +256,6 @@
         "id": 20,
         "title": "Islamic Republic",
         "description": "The period of the Islamic Republic of Iran, established in 1979 by Ruhollah Khomeini, marking a new chapter in Iranian history.",
-        "imageUrl": "/images/islamic-republic.jpg",
         "articles": [
             {
                 "title": "Ruhollah Khomeini",

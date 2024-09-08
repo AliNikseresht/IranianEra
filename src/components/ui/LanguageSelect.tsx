@@ -9,7 +9,7 @@ const LanguageSelect: React.FC = () => {
   };
 
   return (
-    <form className="mx-auto max-w-sm">
+    <form className="mx-auto max-w-sm hidden md:block">
       <select
         id="languages"
         value={selectedLanguage}
